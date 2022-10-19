@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200">
+    <header>
+        <h1 class="text-5xl font-bold text-center">Welcome To My <span class="text-orange-400">Bank!!</span></h1>
+    </header>
+    <main>
+      <div class="mt-12 grid grid-cols-3 gap-4 w-9/12 mx-auto">
+        <div class="single-bank bg-gray-800 text-white text-center py-8 rounded-lg">
+          <span class="text-4xl bold">Deposit</span>
+          <h2 class="text-4xl bold">$<span id="deposit-total">00</span></h2>
+        </div>
+        <div class="single-bank bg-gray-800 text-white text-center py-8 rounded-lg">
+          <span class="text-4xl bold">Withdraw</span>
+          <h2 class="text-4xl bold">$<span id="withdraw-value">00</span></h2>
+        </div>
+        <div class="single-bank bg-gray-800 text-white text-center py-8 rounded-lg">
+          <span class="text-4xl bold">Balance</span>
+          <h2 class="text-4xl bold">$<span id="total-balance">1240</span></h2>
+        </div>
+      </div>
+
+
+      <!--deposit -->
+        <div class="mt-12 grid grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="login-area bg-gray-800   text-center  p-8 rounded-lg">
+              <h1 class=" text-white text-4xl font-semibold">Please Deposit</h1>
+              <input id="deposit-field" type="email" placeholder="Please Deposit" class="mx-auto block rounded mb-2 p-2 w-4/6 mt-8">
+              <button id="btn-deposit"
+              class="bg-slate-200 hover:bg-orange-400 px-8 py-2 font-semibold text-black font-medium rounded-lg">Deposit</button>
+            </div>
+            <!-- Withdraw -->
+            <div class="login-area bg-gray-800  text-center  p-8 rounded-lg">
+              <h1 class=" text-white text-4xl font-semibold">Please Widthdraw</h1>
+              <input id="withdraw-field" type="email" placeholder="Withdraw now" class="mx-auto block rounded mb-2 p-2 w-4/6 mt-8">
+              <button id="withdraw-btn"
+              class="bg-slate-200 hover:bg-orange-400 px-8 py-2 font-semibold text-black font-medium rounded-lg">Withdraw</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
